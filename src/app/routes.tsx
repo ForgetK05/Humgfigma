@@ -22,6 +22,7 @@ import { EquipmentManagementPage } from "./pages/EquipmentManagementPage";
 import { IncidentReportPage } from "./pages/IncidentReportPage";
 import { MaintenancePage } from "./pages/MaintenancePage";
 import { MaintenanceReportPage } from "./pages/MaintenanceReportPage";
+import { ReportsPage } from "./pages/ReportsPage";
 
 export const router = createBrowserRouter([
   {
@@ -58,6 +59,8 @@ export const router = createBrowserRouter([
       { path: "incidents", Component: IncidentReportPage },
       { path: "maintenance", Component: MaintenancePage },
       { path: "maintenance-report", Component: MaintenanceReportPage },
+      // Reports
+      { path: "reports", Component: ReportsPage },
     ],
   },
 ]);
