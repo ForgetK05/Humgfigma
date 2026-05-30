@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, X, AlertTriangle, Info, Search } from "lucide-react";
-import { Card, Badge } from "../components/ui/Card";
+import { Card } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 
 export function TimetableSchedule() {
   const [showModal, setShowModal] = useState(false);

@@ -1,5 +1,6 @@
 import { Plus, Search, MoreVertical, Edit2, Trash2 } from "lucide-react";
-import { Card, Badge } from "../components/ui/Card";
+import { Card } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 
 export function SemesterList() {
   const semesters = [

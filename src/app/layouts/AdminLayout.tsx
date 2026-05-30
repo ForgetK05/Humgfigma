@@ -3,19 +3,36 @@ import { Sidebar } from "../components/Sidebar";
 import { Header } from "../components/Header";
 import { useMemo } from "react";
 
+const PAGE_TITLES: Record<string, string> = {
+  "/": "Tổng quan hệ thống",
+  "/users": "Quản lý Người dùng",
+  "/profile": "Hồ sơ cá nhân",
+  "/buildings": "Quản lý Tòa nhà",
+  "/room-types": "Quản lý Loại phòng",
+  "/rooms": "Quản lý Phòng học",
+  "/semesters": "Danh sách Học kỳ",
+  "/slots": "Danh mục Ca học",
+  "/subjects": "Quản lý Môn học",
+  "/classes": "Quản lý Lớp học",
+  "/assignments": "Phân công Giảng dạy",
+  "/schedule": "Lập Thời khóa biểu",
+  "/room-search": "Tra cứu Phòng trống",
+  "/weekly-timetable": "Xem Thời khóa biểu theo tuần",
+  "/booking": "Đặt phòng học",
+  "/booking-approval": "Phê duyệt Phiếu đăng ký",
+  "/booking-history": "Lịch sử Đăng ký",
+  "/equipment": "Quản lý Thiết bị",
+  "/incidents": "Báo cáo Sự cố Hư hỏng",
+  "/maintenance": "Quản lý Bảo trì",
+  "/maintenance-report": "Thống kê Báo cáo Bảo trì",
+  "/reports": "Báo cáo Tổng hợp",
+};
+
 export function AdminLayout() {
   const location = useLocation();
-  
+
   const title = useMemo(() => {
-    switch (location.pathname) {
-      case "/": return "Tổng quan quản lý đào tạo";
-      case "/semesters": return "Danh sách học kỳ";
-      case "/slots": return "Danh mục ca học";
-      case "/schedule": return "Lập thời khóa biểu";
-      case "/room-search": return "Tra cứu lịch trống phòng";
-      case "/weekly-timetable": return "Xem thời khóa biểu";
-      default: return "Hệ thống Quản lý Đào tạo";
-    }
+    return PAGE_TITLES[location.pathname] ?? "Hệ thống Quản lý Phòng học";
   }, [location.pathname]);
 
   return (

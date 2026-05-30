@@ -1,4 +1,5 @@
-import { Card, Badge } from "../components/ui/Card";
+import { Card } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 import { BookOpen, Users, Building, CalendarCheck, AlertTriangle } from "lucide-react";
 
 export function Dashboard() {

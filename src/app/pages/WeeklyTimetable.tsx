@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card } from "../components/ui/Card";
+import { Card } from "../components/ui/card";
 
 export function WeeklyTimetable() {
   const [activeTab, setActiveTab] = useState("Lớp");

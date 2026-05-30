@@ -1,5 +1,6 @@
 import { Search, Eye } from "lucide-react";
-import { Card, Badge } from "../components/ui/Card";
+import { Card } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 
 export function RoomSearch() {
   const rooms = [
