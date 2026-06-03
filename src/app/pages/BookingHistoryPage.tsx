@@ -51,7 +51,7 @@ export function BookingHistoryPage() {
       {/* Banner */}
       <div className="bg-gradient-to-r from-purple-700 to-indigo-800 rounded-2xl p-6 text-white shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-xl font-bold">Lịch sử đặt phòng của tôi</h2>
+          <h2 className="text-xl font-bold">Lịch sử đăng ký phòng của bạn</h2>
           <p className="text-purple-100 text-sm mt-1">Theo dõi, kiểm tra trạng thái phê duyệt và quản lý các yêu cầu mượn phòng học của bạn.</p>
         </div>
         <NavLink to="/booking" className="flex items-center gap-1.5 bg-white text-purple-700 hover:bg-purple-50 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all shadow-sm">
